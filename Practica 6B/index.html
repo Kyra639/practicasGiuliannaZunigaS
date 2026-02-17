@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Reserva de Viajes</title>
+</head>
+<body>
+
+    <h1>Formulario de Reserva de viajes</h1>
+
+    <form action="#" method="POST">
+        
+        <fieldset>
+            <legend>Datos personales</legend>
+            
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div><br>
+
+            <div>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="example@email.com" required>
+            </div><br>
+
+            <div>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono">
+            </div><br>
+
+            <div>
+                <label for="acompanantes">Número de acompañantes:</label>
+                <input type="number" id="acompanantes" name="acompanantes" step="1" min="1" max="5">
+            </div>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Datos del viaje</legend>
+
+            <div>
+                <label for="origen">Lugar de origen:</label>
+                <input type="text" id="origen" name="origen" value="San Salvador" readonly>
+            </div><br>
+
+            <div>
+                <label for="destino">Lugar de destino:</label>
+                <select id="destino" name="destino">
+                    <option value="">-- Seleccione un destino --</option>
+                    <option value="lauterbrunnen">Lauterbrunnen</option>
+                    <option value="florencia">Florencia</option>
+                    <option value="barcelona">Barcelona</option>
+                    <option value="venecia">Venecia</option>
+                </select>
+            </div><br>
+
+            <div>
+                <label for="salida">Fecha de salida:</label>
+                <input type="date" id="salida" name="salida">
+            </div><br>
+
+            <div>
+                <label for="regreso">Fecha de regreso:</label>
+                <input type="date" id="regreso" name="regreso">
+            </div>
+        </fieldset>
+
+        <br>
+        <button type="submit">Reservar Viaje</button>
+
+    </form>
+
+</body>
+</html>
