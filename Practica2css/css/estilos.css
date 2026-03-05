@@ -1,0 +1,19 @@
+*{
+    margin: 15xp;
+}
+p{
+    font-size: 1.5rem;
+}
+h1, p{
+    text-align: center;
+}
+img{
+    margin-left: 40%;
+}
+.cita{
+    font-style: italic;
+}
+#autor{
+    color: rgb(21, 87, 230);
+}
+ 
