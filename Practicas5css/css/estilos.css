@@ -1,0 +1,39 @@
+/* Aplicar box-sizing a todos los elementos para un mejor control del tamaño */
+* {
+    box-sizing: border-box; /* Incluye relleno y borde en el ancho total [cite: 107] */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #8ecfd8;
+    padding: 20px;
+}
+
+/* Estilo para las tarjetas de café */
+.tarjeta {
+    background-color: rgb(69, 110, 121);
+    width: 300px; /* Ancho de la caja  */
+    border: 1px solid #2a3e50; /* Borde de la caja [cite: 79, 80] */
+    border-radius: 10px; /* Bordes redondeados  */
+    padding: 15px; /* Espacio interno entre el borde y el contenido [cite: 82, 90] */
+    margin: 20px auto; /* Margen externo para separar y centrar las tarjetas [cite: 52, 54] */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.tarjeta img {
+    width: 100%; /* La imagen se ajusta al ancho de la tarjeta */
+    height: auto;
+    border-radius: 5px;
+}
+
+.tarjeta h3 {
+    color: #5d4037;
+    margin-top: 10px;
+}
+
+.tarjeta p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+}

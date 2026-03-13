@@ -1,0 +1,39 @@
+/* Aplicamos border-box para que el padding y el borde no alteren el tamaño final [cite: 107] */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: monospace ;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px; /* Espacio alrededor del contenido del body [cite: 83] */
+}
+
+.tarjeta {
+    background-color: #b3fff2;
+    width: 320px;          /* Definimos el ancho de la caja  */
+    margin: 20px auto;     /* Centra la tarjeta y da espacio entre ellas [cite: 52] */
+    padding: 15px;         /* Espacio interno entre el borde y el contenido [cite: 83] */
+    border: 2px solid #0f69a5; /* Estilo, ancho y color del borde  */
+    border-radius: 12px;   /* Redondeamos las esquinas  */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.tarjeta img {
+    width: 100%;           /* La foto ocupa todo el ancho disponible de la caja */
+    height: auto;
+    border-radius: 8px;    /* Redondeo para la fotografía */
+    margin-bottom: 10px;   /* Separación inferior de la imagen [cite: 51] */
+}
+
+.tarjeta h3 {
+    margin-top: 0;
+    color: #000000;
+}
+
+.tarjeta p {
+    color: #000000;
+    font-size: 15px;
+    line-height: 1.4;
+}
