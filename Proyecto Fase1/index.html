@@ -8,15 +8,15 @@
 <body>
 
     <header>
-        <h1>Legolas Hojaverde</h1>
+        <div class="titulo">Legolas Hojaverde</div>
 
         <nav>
-            <ul>
-                <li><a href="#s1">Historia</a></li>
-                <li><a href="#s2">Información</a></li>
-                <li><a href="#s3">Ficha técnica</a></li>
-                <li><a href="#s4">Registro de fans</a></li>
-                <li><a href="#s5">Galería</a></li>
+            <ul class="menu">
+                <li><a href="#s1" class="link">Historia</a></li>
+                <li><a href="#s2" class="link">Información</a></li>
+                <li><a href="#s3" class="link">Ficha técnica</a></li>
+                <li><a href="#s4" class="link">Registro</a></li>
+                <li><a href="#s5" class="link">Galería</a></li>
             </ul>
         </nav>
     </header>
@@ -25,7 +25,7 @@
 
         <section>
             <h2 id="s1">Historia</h2>
-            <img src="img/The Lord of the Rings.jpg" alt="Legolas en el bosque de Ithilien" width="300">
+            <img src="img/The Lord of the Rings.jpg" alt="Legolas" class="imgpeq">
             
             <p>
                 Legolas es un elfo de la estirpe de los Sindar, hijo de Thranduil, el Rey de los Elfos del Bosque Negro. 
@@ -40,9 +40,7 @@
             </p>
         </section>
 
-        <hr>
-
-        <section>
+        <section class="ficha">
             <h2 id="s2">Información</h2>
             
             <h3>Habilidades y Características</h3>
@@ -62,11 +60,9 @@
             </ol>
         </section>
 
-        <hr>
-
-        <section>
+        <section class="ficha">
             <h2 id="s3">Ficha técnica</h2>
-            <table border="1">
+            <table>
                 <thead>
                     <tr>
                         <th>Categoría</th>
@@ -88,11 +84,11 @@
                     </tr>
                     <tr>
                         <td>Primera aparición</td>
-                        <td>El Señor de los Anillos: La Comunidad del Anillo</td>
+                        <td>La Comunidad del Anillo</td>
                     </tr>
                     <tr>
                         <td>Debilidades</td>
-                        <td>La llamada del Mar (Añoranza de los Elfos)</td>
+                        <td>La llamada del Mar</td>
                     </tr>
                     <tr>
                         <td>Alias</td>
@@ -102,9 +98,7 @@
             </table>
         </section>
 
-        <hr>
-
-        <section>
+        <section class="centrado">
             <h2 id="s4">Registro de fans</h2>
             <form action="#" method="POST">
                 <p>
@@ -115,18 +109,18 @@
                     <label for="txtCorreo">Correo:</label>
                     <input type="email" id="txtCorreo" name="correo" placeholder="ejemplo@correo.com" required>
                 </p>
-                <button type="submit">Enviar Registro</button>
+                <input type="submit" value="Enviar Registro">
             </form>
         </section>
 
-        <hr>
-
-        <section>
+        <section class="galeria">
             <h2 id="s5">Galería</h2>
-            <img src="img/1.jpg" width="200">
-            <img src="img/2.jpg" width="200">
-            <img src="img/descargar.jpg"width="200">
-            <img src="img/the lord of the rings (1).jpg"width="200"
+            <div class="contenedor-galeria">
+                <img src="img/1.jpg" alt="Legolas 1">
+                <img src="img/2.jpg" alt="Legolas 2">
+                <img src="img/descargar.jpg" alt="Legolas 3">
+                <img src="img/the lord of the rings (1).jpg" alt="Legolas 4">
+            </div>
         </section>
 
     </main>
